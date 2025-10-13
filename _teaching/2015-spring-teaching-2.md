@@ -1,10 +1,10 @@
 ---
 title: "ECE 398RI"
 collection: teaching
-type: "course"
-permalink: /teaching/2015-spring-teaching-1
+type: "Undergraduate Course"
+permalink: /teaching/2023-fall-spring-teaching
 venue: "University of Illinois Urbana-Champaign, ECE Department"
-date: 2023
+date: 2023-01-01
 location: "Champaign, IL"
 ---
 As the lecturer for **ECE 398**, I designed and led **laboratory sessions integrating virtual reality (VR) environments** to help students visualize and interact with electromagnetic field phenomena introduced in **ECE 329 (Fields and Waves I)**.  
