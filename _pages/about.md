@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Pedro Silva - Computational Physics"
+title: "Home"
 author_profile: true
 redirect_from: 
   - /about/
