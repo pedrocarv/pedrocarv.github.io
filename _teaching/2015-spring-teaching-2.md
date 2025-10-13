@@ -1,20 +1,14 @@
 ---
-title: "Teaching experience 2"
+title: "ECE 398RI"
 collection: teaching
-type: "Workshop"
+type: "course"
 permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+venue: "University of Illinois Urbana-Champaign, ECE Department"
+date: 2023
+location: "Champaign, IL"
 ---
+As the lecturer for **ECE 398**, I designed and led **laboratory sessions integrating virtual reality (VR) environments** to help students visualize and interact with electromagnetic field phenomena introduced in **ECE 329 (Fields and Waves I)**.  
 
-This is a description of a teaching experience. You can use markdown like any other post.
+I guided experiments that allowed students to **explore wave propagation, reflection, and field distributions** in immersive 3D settings, bridging theory with spatial intuition. My duties included **creating instructional material**, **supervising lab activities**, and **assessing student performance** through hands-on exercises and concept-based evaluations.  
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+This course emphasized the use of **interactive visualization** as a pedagogical tool to strengthen students’ conceptual understanding of electromagnetics.
