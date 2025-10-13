@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Pedro Silva"
+title                    : "Pedro Silva/Computational Physics"
 title_separator          : "-"
 name                     : &name "Pedro Silva"
 description              : &description "Research Projects and Activities"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -28,7 +28,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "PhD Candidate, Electrical & Computer Engineering"
   location         : "Champaign, Illinois"
-  employer         : "University of Illinois Urbana-Champaign"
+  employer         : "Univ. of Illinois Urbana-Champaign"
   uri              : # URL
   email            : "pedroos2@illinois.edu" 
 
