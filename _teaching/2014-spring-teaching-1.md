@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2022-fall-teaching
 venue: "University of Illinois Urbana-Champaign, ECE Department"
-date: 2022
+date: 2022-08-01
 location: "Champaign, IL"
 ---
 
