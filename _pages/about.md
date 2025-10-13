@@ -1,13 +1,11 @@
 ---
 permalink: /
-title: "Home"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-## About Me
 
 I am **Pedro Silva**, a Ph.D. candidate in **Electrical and Computer Engineering** at the **University of Illinois Urbana–Champaign**, advised by **Prof. Raluca Ilie**. My research focuses on **computational modeling of the Earth’s inner magnetosphere**, particularly on how **heavy ions shape ring current decay and plasmaspheric refilling** during geomagnetic storms.  
 
