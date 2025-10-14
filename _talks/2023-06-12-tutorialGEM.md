@@ -1,6 +1,5 @@
 ---
-title: "Solar Wind-Magnetosphere interactions: an introduc-
-tion"
+title: "Solar Wind-Magnetosphere interactions: an introduction"
 collection: talks
 type: "Tutorial"
 permalink: /talks/2013-03-01-tutorial-1
