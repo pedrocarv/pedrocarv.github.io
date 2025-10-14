@@ -1,6 +1,6 @@
 var addressPoints = [
   [
-    "Solar Wind-Magnetosphere interactions: an introduc- tion<br />Geospace Environment Modeling Workshop; San Diego, CA, USA",
+    "Solar Wind-Magnetosphere interactions: an introduction<br />Geospace Environment Modeling Workshop; San Diego, CA, USA",
     32.7174202,
     -117.162772
   ],
