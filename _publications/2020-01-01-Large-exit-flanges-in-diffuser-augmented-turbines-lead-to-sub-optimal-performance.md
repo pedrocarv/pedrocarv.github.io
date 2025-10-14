@@ -1,6 +1,7 @@
 ---
 title: "Large exit flanges in diffuser-augmented turbines lead to sub-optimal performance"
 collection: publications
+category: manuscripts
 permalink: /publication/2020-01-01-Large-exit-flanges-in-diffuser-augmented-turbines-lead-to-sub-optimal-performance
 date: 2020-01-01
 venue: 'Journal of Wind Engineering and Industrial Aerodynamics'
