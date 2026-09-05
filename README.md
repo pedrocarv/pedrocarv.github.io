@@ -35,7 +35,7 @@ All publication records were migrated from `pedrocarv/pedrocarv.github.io`, revi
 
 The site publishes to **https://pedrocs.com/** through GitHub Pages.
 
-Push changes to `master` to run the **Publish research website to GitHub Pages** workflow. It installs the locked dependencies, checks TypeScript, builds the static site, and deploys `dist/client/`. You can also run the workflow manually from the Actions tab.
+Push changes to `master` to run the **Publish research website to GitHub Pages** workflow. It installs the locked dependencies, checks TypeScript and the model invariants, builds the static site, and deploys `dist/client/`. You can also run the workflow manually from the Actions tab.
 
 In Settings → Pages, the source is **GitHub Actions**. Keep the custom domain set to `pedrocs.com` and HTTPS enabled. `public/CNAME` and `.nojekyll` are included in the static output. The Sites manifest supports the separate private preview; GitHub Pages uses the workflow.
 
@@ -45,4 +45,18 @@ The previous Jekyll website is preserved in the repository’s Git history befor
 
 - Magnetosphere illustration: NASA / GSFC, reused from the original site with its existing attribution; shown as an illustration, not simulation output.
 - Photo of Pedro Silva at AGU 2024: reused from the original site.
-- No generated scientific imagery or invented simulation results are used.
+- Earth globe texture: [NASA Earth Observatory, Blue Marble Next Generation, July 2004](https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-map/), a 5400 × 2700 equirectangular day map.
+
+## Interactive magnetosphere
+
+The homepage contains a rotatable Three.js teaching model with solar-wind speed, proton density, and IMF Bz controls, independent visibility controls, camera presets, pause/reset, and five inspectable Dungey-cycle stages. Three.js loads when the section approaches the viewport. Reduced-motion preferences pause the initial animation; a static illustration and cycle descriptions remain available if WebGL 2 fails.
+
+- `components/magnetosphere/explorer.tsx`: controls, loading states, cycle narrative, sources.
+- `components/magnetosphere/scene.ts`: globe, field topology, wind, current directions, aurora, camera and rendering lifecycle.
+- `components/magnetosphere/plasma.ts`: analytic pressure volume rendering, ring drift, tail transport, and polar outflow tracers.
+- `lib/magnetosphere.ts`: pressure scaling and pure geometry functions.
+- `npm test`: pressure units/scaling, field-line topology and anchoring, wind exclusion, tail transport continuity/direction, and outward polar flow across the control range.
+
+Axes are schematic: +x is antisunward, +y is magnetic north, and +z is dusk. Proton dynamic pressure is mₚnv²; the dayside distance scales as P⁻¹⁄⁶, normalized to 10 Earth radii at 2 nPa. Other shapes, pressure colors, particle speeds, and timing are illustrative. These are analytic educational graphics, not imported simulation results or a forecast. Aurora altitude and current thickness are enlarged. IMF By, dipole tilt, northward-IMF lobe reconnection, Region 2 currents, and substorm timing are omitted.
+
+The pressure torus follows the volumetric approach in [NASA SVS: The Ring Current in Earth's Magnetosphere](https://svs.gsfc.nasa.gov/5643/). Plasma-sheet rendering and directional markers are informed by [NASA SVS: Reconnection Fronts](https://svs.gsfc.nasa.gov/4088/); polar-cap ion plumes reference [NASA's polar wind animation](https://svs.gsfc.nasa.gov/14628/). Pressure shading, bulk transport, conventional current, field-line motion, polar outflow, and auroral precipitation are explicitly distinguished in the interface. Additional physics references: [NASA on reconnection](https://pwg.gsfc.nasa.gov/Education/wmpause.html) and [current systems](https://pwg.gsfc.nasa.gov/Education/wcurrent.html).

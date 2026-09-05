@@ -1,3 +1,4 @@
+import MagnetosphereExplorer from '@/components/magnetosphere/explorer';
 import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { Header, Footer, scholarUrl } from '@/components/site/chrome';
 import { publications, PublicationRow } from '@/components/site/publication';
@@ -7,9 +8,10 @@ export default function Home() {
     <main id="main">
       <section className="hero" aria-labelledby="hero-title">
         <figure className="hero-image"><img src="/images/magnetosphere.webp" width="1200" height="1122" alt="Illustration of solar wind meeting Earth's magnetosphere, with blue magnetic field lines surrounding Earth." fetchPriority="high" /><figcaption>Earth’s magnetosphere · NASA / GSFC</figcaption></figure>
-        <div className="hero-content"><p className="eyebrow"><span className="status-dot" /> Computational space physics</p><h1 id="hero-title">Modeling Earth’s<br /><em>magnetosphere.</em></h1><p className="hero-description">I’m Pedro Silva, a Ph.D. candidate studying how particles, fields, and plasma shape Earth’s space environment.</p><p className="hero-affiliation">Electrical &amp; Computer Engineering<br />University of Illinois Urbana–Champaign</p><a className="button-light" href="#research">Explore my research <ArrowDown size={18} /></a></div>
+        <div className="hero-content"><p className="eyebrow"><span className="status-dot" /> Computational space physics</p><h1 id="hero-title">Modeling Earth’s<br /><em>magnetosphere.</em></h1><p className="hero-description">I’m Pedro Silva, a Ph.D. candidate studying how particles, fields, and plasma shape Earth’s space environment.</p><p className="hero-affiliation">Electrical &amp; Computer Engineering<br />University of Illinois Urbana–Champaign</p><a className="button-light" href="#magnetosphere">Explore the magnetosphere <ArrowDown size={18} /></a></div>
         <div className="hero-foot"><span>HEIDI · BATS-R-US · SWMF</span><span>Champaign, Illinois</span></div>
       </section>
+      <MagnetosphereExplorer/>
       <section id="research" className="section research-section">
         <div className="section-heading"><p className="eyebrow">01 / Research</p><h2>Small particles.<br /><em>System-wide effects.</em></h2></div>
         <div className="research-intro"><p>How do heavy ions influence the way Earth’s magnetosphere responds to a geomagnetic storm?</p><p>I develop physics-based computational models to investigate ring current decay, plasmaspheric refilling, and the connections between them.</p><a className="text-link" href="/publications/">Explore publications <ArrowUpRight size={18} /></a></div>
